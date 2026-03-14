@@ -1,0 +1,43 @@
+## Analysis Summary
+
+### Methodology
+
+The project analyzes the relationship between **market sentiment (Fear vs Greed)** and **trader behavior and performance** using two datasets: a Bitcoin Fear & Greed sentiment dataset and historical trader transaction data from Hyperliquid.
+
+First, both datasets were cleaned by checking for missing values, removing duplicates, and converting timestamps into a consistent daily date format. The trader dataset was then merged with the sentiment dataset using the date field so that each trade could be associated with the corresponding market sentiment.
+
+Next, several key metrics were created to analyze trader behavior and performance, including:
+
+* **Closed PnL** to measure trader profitability
+* **Trade frequency** to analyze how active traders are during different sentiment conditions
+* **Average trade size (USD)** to observe risk-taking behavior
+* **Win rate** to estimate the proportion of profitable trades
+
+Exploratory data analysis and visualizations were used to compare these metrics between **Fear** and **Greed** market conditions. Additionally, traders were segmented into groups such as **frequent vs infrequent traders** to identify behavioral patterns.
+
+---
+
+### Key Insights
+
+1. **Trader behavior changes with market sentiment.**
+   During Greed periods, traders tend to place larger trades and show higher trading activity, indicating increased risk appetite.
+
+2. **Market Fear periods show more cautious behavior.**
+   Traders reduce trade sizes and activity during Fear conditions, suggesting risk aversion and uncertainty.
+
+3. **Frequent traders generally achieve higher cumulative profitability.**
+   More active traders tend to generate better overall results compared to infrequent traders, possibly due to experience or better market timing.
+
+---
+
+### Strategy Recommendations
+
+Based on the analysis, the following trading strategies can be suggested:
+
+**1. Risk Reduction During Fear Periods**
+When the market sentiment indicates Fear, traders should consider reducing position sizes and avoiding high-risk trades. This approach helps protect capital during uncertain market conditions.
+
+**2. Controlled Aggression During Greed Periods**
+When market sentiment is Greed, traders may increase trading activity and position sizes moderately to take advantage of market momentum, while still maintaining risk management rules.
+
+These strategies highlight how sentiment-driven insights can help traders make **more informed and disciplined trading decisions**.
